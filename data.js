@@ -9,8 +9,8 @@ const portfolioData = {
             id: 'ai-1',
             title: '虞姬自刎舞蹈挑战',
             category: 'ubisoft',
-            thumbnail: 'https://via.placeholder.com/640x360/667eea/ffffff?text=虞姬自刎舞蹈挑战',
-            videoUrl: '', // 填入B站视频链接或嵌入代码
+            thumbnail: 'images/',
+            videoUrl: '', // <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116959140126614&bvid=BV1PXKa6UEve&cid=40171864240&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
             date: '2026-05',
             company: '育碧上海 - 舞力全开派对',
             stats: {
