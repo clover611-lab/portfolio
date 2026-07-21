@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩佳玉 - 作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">韩佳玉</div>
+            <ul class="nav-menu">
+                <li class="nav-item active" data-category="ai-videos">AI视频创作</li>
+                <li class="nav-item" data-category="events">线下活动</li>
+                <li class="nav-item" data-category="projects">独立项目</li>
+                <li class="nav-item" data-category="contact">联系我</li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container">
+        <!-- Hero区域（可选） -->
+        <section class="hero" id="hero">
+            <img src="https://pfst.cf2.poecdn.net/base/image/649b04a8faf979beb9ee9c52055607b71734b72167dad864ed3306f82fe68233?w=1280&h=1280" alt="韩佳玉" class="profile-image">
+            <h1>游戏营销 · 内容运营 · 活动策划</h1>
+            <p>专注于游戏行业营销与内容创作</p>
+        </section>
+
+        <!-- AI视频创作 -->
+        <section class="content-section active" id="ai-videos">
+            <div class="section-title">
+                <h2>AI视频创作</h2>
+                <div class="filter-tags">
+                    <span class="tag active" data-filter="all">全部</span>
+                    <span class="tag" data-filter="ubisoft">育碧AI二创</span>
+                    <span class="tag" data-filter="real-person">真人视频</span>
+                    <span class="tag" data-filter="personal">个人创作</span>
+                </div>
+            </div>
+            <div class="grid-container" id="ai-videos-grid">
+                <!-- AI视频项目卡片将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 线下活动 -->
+        <section class="content-section" id="events">
+            <div class="section-title">
+                <h2>线下活动</h2>
+            </div>
+            <div class="grid-container" id="events-grid">
+                <!-- 线下活动卡片将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 独立项目 -->
+        <section class="content-section" id="projects">
+            <div class="section-title">
+                <h2>独立项目</h2>
+            </div>
+            <div class="grid-container" id="projects-grid">
+                <!-- 独立项目卡片将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 联系我 -->
+        <section class="content-section" id="contact">
+            <div class="contact-content">
+                <h2>联系我</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="icon-email"></i>
+                        <h3>邮箱</h3>
+                        <a href="/cdn-cgi/l/email-protection#13707f7c657661252222532225203d707c7e"><span class="__cf_email__" data-cfemail="57343b38213225616666176661647934383a">[email&#160;protected]</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="icon-resume"></i>
+                        <h3>简历</h3>
+                        <a href="resume.pdf" download class="download-btn">下载简历</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 视频弹窗 -->
+    <div class="modal" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="video-container">
+                    <div id="videoPlayer"></div>
+                </div>
+                <div class="video-info">
+                    <h3 id="videoTitle"></h3>
+                    <div class="video-meta">
+                        <span id="videoDate"></span>
+                        <span id="videoCompany"></span>
+                    </div>
+                    <div class="video-stats" id="videoStats">
+                        <!-- 数据将动态加载 -->
+                    </div>
+                    <div class="video-description" id="videoDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
